@@ -1,0 +1,212 @@
+
+<!-- saved from url=(0036)http://localhost/e-shop/routine.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                padding: 0px;
+            }
+
+            ::-webkit-scrollbar {
+                width:0px;
+            }
+ 
+
+            body{
+                display: flex;
+                padding:10px;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            input + *{
+                display: inline-block;
+            }
+
+            .block{
+                border-radius: 20px;
+                border: 1px solid black;
+                margin:5px;
+                overflow-y: scroll;
+                padding: 2% 20px;
+            }
+
+            .block *{
+                max-width: 96%;
+            }
+
+            .titles::marker{
+                font-size: 0px;
+            }
+
+            .titles{
+                text-align: center;
+            }
+
+            #header{
+                display:flex;
+                flex-grow: 1;
+            }
+
+            #header *{
+                flex-grow: 1;
+            }
+
+            #menu{
+                display: flex;
+            }
+
+            #menu a{
+                color:black;
+                justify-content: center;
+                align-content: center;
+                display: flex;
+                text-decoration: none;
+                height: fit-content;
+                width: fit-content;
+            }
+
+            #date_day{
+                flex-direction: column;
+                display:flex;
+            }
+
+            #date_day *{
+                display:flex;
+                height: 50%;
+                justify-content: center;
+                align-content: center;
+            }
+
+            #body{
+                flex-grow: 7;
+                display: flex;
+                height: 100%;
+            }
+
+            #left_side, #right_side{
+                flex-shrink: 1;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #top_tasks{
+                flex-grow: 2;
+                flex-shrink: 2;
+            }
+
+            #to_do{
+                flex-grow: 5;
+                flex-shrink: 5;
+            }
+
+            #schadualed{
+                padding: 20px 0px;
+                flex-grow: 3;
+                flex-shrink: 3;
+            }
+
+            #water{
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+
+            #sports{
+                flex-grow: 3;
+                flex-shrink: 3;
+            }
+
+            .schadualed_tasks{
+                margin:4px auto;
+                display: block;
+            }
+
+            #schadualed div{
+                width: 100%;
+                overflow-wrap: break-word;
+                padding: 0px 2px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div id="header">
+            <span id="menu" class="header"><a href="http://localhost/e-shop/routine.html#">Daily planner</a></span>
+            <div id="date_day">
+                <span id="date" class="header">Date: 2/2/2023</span>
+                <span id="day" class="header">Day: Friday</span>
+            </div>
+        </div>
+
+        <div id="body">
+            <div id="left_side">
+                <div id="top_tasks" class="block">
+                    <ol type="1" start="0" id="top_tasks_list">
+                        <li id="top_tasks_title" class="titles">Top Tasks</li>
+                        <li>First task</li>
+                        <li>Second task</li>
+                        <li>Third task</li>
+                    </ol>
+                </div>
+                <div id="to_do" class="block">
+                    <p class="titles">To Do</p>
+                    <span class="to_to_tasks"><input type="checkbox" class="to_do_tasks_checkbox"><p class="to_do_tasks_description">First task</p></span>
+                    <span class="to_to_tasks"><input type="checkbox" class="to_do_tasks_checkbox"><p class="to_do_tasks_description">Second task</p></span>
+                    <span class="to_to_tasks"><input type="checkbox" class="to_do_tasks_checkbox"><p class="to_do_tasks_description">Third task</p></span>
+                    <span class="to_to_tasks"><input type="checkbox" class="to_do_tasks_checkbox"><p class="to_do_tasks_description">Fourth task</p></span>
+                    <span class="to_to_tasks"><input type="checkbox" class="to_do_tasks_checkbox"><p class="to_do_tasks_description">Fivth task</p></span>
+                    <span class="to_to_tasks"><input type="checkbox" class="to_do_tasks_checkbox"><p class="to_do_tasks_description">Sixth task</p></span>
+                    <span class="to_to_tasks"><input type="checkbox" class="to_do_tasks_checkbox"><p class="to_do_tasks_description">Seventh task</p></span>
+                </div>
+            </div>
+
+            <div id="right_side">
+                <div id="spprts" class="block">
+                    <p id="sports_title" class="titles">Daily sports</p>
+                    <span><input type="checkbox" class="sports_checkbox"><input type="text" class="sports_dexcription" value="sport" disabled=""></span>
+                    <span><input type="checkbox" class="sports_checkbox"><input type="text" class="sports_dexcription" value="sport" disabled=""></span>
+                    <span><input type="checkbox" class="sports_checkbox"><input type="text" class="sports_dexcription" value="sport" disabled=""></span>
+                    <span><input type="checkbox" class="sports_checkbox"><input type="text" class="sports_dexcription" value="sport" disabled=""></span>
+                </div>
+                <div id="water" class="block">
+                    <p id="water_title" class="titles">water cups</p>
+                    <input type="checkbox" id="cup1" class="cups">
+                    <input type="checkbox" id="cup2" class="cups">
+                    <input type="checkbox" id="cup3" class="cups">
+                    <input type="checkbox" id="cup4" class="cups">
+                    <input type="checkbox" id="cup5" class="cups">
+                    <input type="checkbox" id="cup6" class="cups">
+                    <input type="checkbox" id="cup7" class="cups">
+                    <input type="checkbox" id="cup8" class="cups">
+                    <input type="checkbox" id="cup9" class="cups">
+                </div>
+                <div id="schadualed" class="block">
+                    <p id="schadualed_title" class="titles">schadualed</p>
+                    <span class="schadualed_tasks">
+                        <input type="text" class="schadualed_times" value="00:00 am" disabled="">
+                        <div class="schadualed_description">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                    </span>
+                    <span class="schadualed_tasks">
+                        <input type="text" class="schadualed_times" value="00:00 am" disabled="">
+                        <div class="schadualed_description">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                    </span>
+                    <span class="schadualed_tasks">
+                        <input type="text" class="schadualed_times" value="00:00 am" disabled="">
+                        <div class="schadualed_description">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                    </span>
+                    <span class="schadualed_tasks">
+                        <input type="text" class="schadualed_times" value="00:00 am" disabled="">
+                        <div class="schadualed_description">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+        </script>
+    
+</body></html>
